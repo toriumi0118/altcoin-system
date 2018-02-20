@@ -36,6 +36,17 @@ dev_appserver.py app.yaml
 - admin server   
   [http://localhost:8000](http://localhost:8000)
 
+## Deploy
+
+- deploy app
+  ```sh
+  gcloud app deploy app.yaml
+  ```
+- deploy cron
+  ```sh
+  gcloud app deploy cron.yaml
+  ```
+
 ## Refs
 
 - [appengine_config.py](https://cloud.google.com/appengine/docs/standard/python/tools/appengineconfig?hl=ja)
