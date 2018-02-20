@@ -1,0 +1,9 @@
+setup.cfg
+python_bitbankcc/__init__.py
+python_bitbankcc/private_api.py
+python_bitbankcc/public_api.py
+python_bitbankcc/utils.py
+python_bitbankcc.egg-info/PKG-INFO
+python_bitbankcc.egg-info/SOURCES.txt
+python_bitbankcc.egg-info/dependency_links.txt
+python_bitbankcc.egg-info/top_level.txt
