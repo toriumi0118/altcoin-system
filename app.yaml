@@ -1,6 +1,16 @@
+service: default
 runtime: python27
 api_version: 1
 threadsafe: true
+
+includes:
+- secrets.yaml
+
+libraries:
+- name: ujson
+  version: "1.35"
+- name: ssl
+  version: latest
 
 handlers:
 - url: /.*
