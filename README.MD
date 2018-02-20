@@ -11,12 +11,9 @@ Cron tasks are also working on it.
 
 - In `lib/` dir for GAE.
   - [https://github.com/bitbankinc/python-bitbankcc](https://github.com/bitbankinc/python-bitbankcc)
-  - [https://github.com/requests/requests/tree/v2.3.0](https://github.com/requests/requests/tree/v2.3.0)
-
-    using not latest version. because later versions from v2.3.0 cannot use for dev_server.py.
-
-    `('Connection aborted.', error(13, 'Permission denied'))` this error message happened.
-
+  - [https://github.com/requests/requests/tree/v2.3.0](https://github.com/requests/requests/tree/v2.3.0)  
+    using not latest version. because later versions from v2.3.0 cannot use for dev_server.py.  
+    `('Connection aborted.', error(13, 'Permission denied'))` this error message happened.  
 - Use built in by GAE. ([built-in-libraries-27](https://cloud.google.com/appengine/docs/standard/python/tools/built-in-libraries-27))
   - [https://pypi.python.org/pypi/ujson](https://pypi.python.org/pypi/ujson)
   - [https://docs.python.org/dev/library/ssl.html](https://docs.python.org/dev/library/ssl.html)
@@ -31,11 +28,11 @@ dev_appserver.py app.yaml
 
 ### Local URLs
 
-- dev server
+- dev server  
   [http://localhost:8080/](http://localhost:8080/)
-- api server
+- api server  
   [http://localhost:55480/](http://localhost:55480/)
-- admin server
+- admin server   
   [http://localhost:8000](http://localhost:8000)
 
 ## Ref
