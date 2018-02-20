@@ -1,0 +1,5 @@
+cron:
+- description: "daily summary job"
+  url: /
+  timezone: Asia/Tokyo
+  schedule: every 5 minutes from 1:30 to 1:40
