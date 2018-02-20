@@ -11,6 +11,8 @@ libraries:
   version: "1.35"
 - name: ssl
   version: latest
+- name: pytz
+  version: latest
 
 handlers:
 - url: /.*
