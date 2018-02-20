@@ -35,7 +35,7 @@ dev_appserver.py app.yaml
 - admin server   
   [http://localhost:8000](http://localhost:8000)
 
-## Ref
+## Refs
 
 - [appengine_config.py](https://cloud.google.com/appengine/docs/standard/python/tools/appengineconfig?hl=ja)
 - [hide secrets environment variables](https://groups.google.com/forum/#!topic/google-appengine/MnEjnYFUMkg)
