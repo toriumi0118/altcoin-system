@@ -53,7 +53,8 @@ dev_appserver.py app.yaml
 - [hide secrets environment variables](https://groups.google.com/forum/#!topic/google-appengine/MnEjnYFUMkg)
 - [app.yaml](https://cloud.google.com/appengine/docs/standard/python/config/appref)
 - [Can Python Requests library be used on Google App Engine?](https://stackoverflow.com/questions/9604799/can-python-requests-library-be-used-on-google-app-engine/28544823)
-- []()
+- [how to restrict post request](https://cloud.google.com/appengine/docs/standard/python/config/appref#handlers_login)    
+  You can add `login: admin` directive, for cron tasks, to restrict requested by normal access.
 - []()
 - []()
 - []()
