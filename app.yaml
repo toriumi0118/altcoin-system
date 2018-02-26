@@ -17,3 +17,4 @@ libraries:
 handlers:
 - url: /.*
   script: main.app
+  login: admin # admin only

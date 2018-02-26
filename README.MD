@@ -7,6 +7,9 @@ buy sell altcoin system. written by yasuyuki toriumi.
 It will work on GAE (GoogleAppEngine).
 Cron tasks are also working on it.
 
+## Services
+
+
 ## Dependencies
 
 - In `lib/` dir for GAE.
@@ -14,6 +17,7 @@ Cron tasks are also working on it.
   - [https://github.com/requests/requests/tree/v2.3.0](https://github.com/requests/requests/tree/v2.3.0)  
     using not latest version. because later versions from v2.3.0 cannot use for dev_server.py.  
     `('Connection aborted.', error(13, 'Permission denied'))` this error message happened.  
+  - [https://pypi.python.org/pypi/attrdict](https://pypi.python.org/pypi/attrdict)
 - Use built in by GAE. ([built-in-libraries-27](https://cloud.google.com/appengine/docs/standard/python/tools/built-in-libraries-27))
   - [https://pypi.python.org/pypi/ujson](https://pypi.python.org/pypi/ujson)
   - [https://docs.python.org/dev/library/ssl.html](https://docs.python.org/dev/library/ssl.html)

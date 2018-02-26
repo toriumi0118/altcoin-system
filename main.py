@@ -1,23 +1,25 @@
 # -*- coding: utf-8 -*-
 import webapp2
-import os
-import python_bitbankcc
-import ujson
+from bb import BB
 
-class MainPage(webapp2.RequestHandler):
+class App(webapp2.RequestHandler):
+    def ok(self):
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write("ok")
+
+class MainPage(App):
+    def get(self):
+        self.ok()
+
+class CoinHandler(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/plain'
-        test_env1 = os.environ.get('CLIENT_SECRET')
-        test_env2 = os.environ.get('CLIENT_SECRET2')
-        test_env3 = os.environ.get('CLIENT_SECRET3', 'other')
-
-        pub = python_bitbankcc.public()
-        value = pub.get_ticker('btc_jpy')
-
-        self.response.write("""
-        1: %s, 2: %s, 3: %s, json: %s
-        """ % (test_env1, test_env2, test_env3, ujson.dumps(value)))
+        self.response.write(
+            BB().get_histories()
+        )
+        # self.ok()
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
+    ('/api/coin', CoinHandler),
 ], debug=True)
