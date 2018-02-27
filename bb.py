@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import time
 import python_bitbankcc
 from attrdict import AttrDict
 
@@ -70,7 +71,10 @@ class BB(object):
         return AttrDict(self.prv.get_active_orders(self.pair))
 
     def post_orders(self, requests):
+        first = True
         for req in requests:
+            if not first: time.sleep(10)
+            first = False
             self.prv.order(
                 self.pair,
                 req["price"],
