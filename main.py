@@ -2,7 +2,7 @@
 import webapp2
 import logging
 import traceback
-from alt import required_orders
+from alt import step_buyer
 
 class App(webapp2.RequestHandler):
     def ok(self):
@@ -20,7 +20,7 @@ class MainPage(App):
 class CoinHandler(App):
     def get(self):
         try:
-            req_orders = required_orders()
+            step_buyer()
             self.ok()
         except Exception as e:
             logging.error(e)

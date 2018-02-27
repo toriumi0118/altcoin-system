@@ -5,12 +5,12 @@ import alt_util as au
 from bb import BB
 from model import Tick
 
-def required_orders():
+def step_buyer():
     bb = BB('xrp_jpy')
     current, previous = ticks(bb)
     orders = active_orders(bb)
     reqs = au.requests(current, previous, orders)
-    if not reqs: None
+    if not reqs: return None
     bb.post_orders(reqs)
 
 def active_orders(bb):
