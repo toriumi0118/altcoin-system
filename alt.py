@@ -15,7 +15,7 @@ def required_orders():
 
 def active_orders(bb):
     orders = dict(map(
-         lambda x: (int(float(x.price)), x.side),
+         lambda x: (float(x.price), x.side),
          filter(
              lambda x: x.order_id not in [17228280],
              bb.get_active_orders().orders,

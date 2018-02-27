@@ -1,5 +1,5 @@
 cron:
-  - description: "crontest"
+  - description: "alt-system-cron"
     url: /api/coin
     timezone: Asia/Tokyo
-    schedule: every 5 minutes from 1:40 to 1:50
+    schedule: every 1 minutes

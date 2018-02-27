@@ -9,6 +9,14 @@ Cron tasks are also working on it.
 
 ## Services
 
+### Cron
+
+`/api/coin`: lauch main buyer logic.
+
+### Emergency Stop
+
+Go to [google cloud console](https://console.cloud.google.com/appengine/settings?project=sandbox-195516&hl=ja&serviceId=default&versionId=20180226t203723).
+Click `アプリケーションを無効にする` button.
 
 ## Dependencies
 
@@ -59,6 +67,6 @@ dev_appserver.py app.yaml
 - [Can Python Requests library be used on Google App Engine?](https://stackoverflow.com/questions/9604799/can-python-requests-library-be-used-on-google-app-engine/28544823)
 - [how to restrict post request](https://cloud.google.com/appengine/docs/standard/python/config/appref#handlers_login)    
   You can add `login: admin` directive, for cron tasks, to restrict requested by normal access.
-- []()
+- [cron.yaml Reference](https://cloud.google.com/appengine/docs/standard/python/config/cronref)
 - []()
 - []()
