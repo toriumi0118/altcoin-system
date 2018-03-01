@@ -3,8 +3,8 @@ from collections import OrderedDict
 import logging
 import ujson
 
-UNIT = 100.0 # yen
-MAX_PRICE = 120.0 # yen
+UNIT = 10000.0 # yen
+MAX_PRICE = 150.0 # yen
 BUY_SELL_DIFF = 0.5 # yen
 
 STOPPER_SELL_PRICE = 1000.0 # yen
